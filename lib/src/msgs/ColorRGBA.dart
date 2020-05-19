@@ -1,0 +1,100 @@
+// Auto-generated. Do not edit!
+
+// (in-package std_msgs.msg)
+
+
+import 'dart:convert';
+import 'package:buffer/buffer.dart';
+import 'package:dartros/msg_utils.dart';
+
+//-----------------------------------------------------------
+
+class ColorRGBA extends RosMessage<ColorRGBA> {
+  double r;
+
+  double g;
+
+  double b;
+
+  double a;
+
+  static ColorRGBA empty$ = ColorRGBA();
+  ColorRGBA({ 
+    r,
+    g,
+    b,
+    a,
+  }):
+  this.r = r ?? 0.0,
+  this.g = g ?? 0.0,
+  this.b = b ?? 0.0,
+  this.a = a ?? 0.0;
+
+  ColorRGBA call({ 
+    r,
+    g,
+    b,
+    a,
+  }) => ColorRGBA(
+  r: r,
+  g: g,
+  b: b,
+  a: a,
+  );
+
+  void serialize(ByteDataWriter writer) {
+    // Serializes a message object of type ColorRGBA
+    // Serialize message field [r]
+    writer.writeFloat32(r);
+    // Serialize message field [g]
+    writer.writeFloat32(g);
+    // Serialize message field [b]
+    writer.writeFloat32(b);
+    // Serialize message field [a]
+    writer.writeFloat32(a);
+  }
+
+  @override
+  ColorRGBA deserialize(ByteDataReader reader) {
+    //deserializes a message object of type ColorRGBA
+    final data = ColorRGBA();
+    // Deserialize message field [r]
+    data.r = reader.readFloat32();
+    // Deserialize message field [g]
+    data.g = reader.readFloat32();
+    // Deserialize message field [b]
+    data.b = reader.readFloat32();
+    // Deserialize message field [a]
+    data.a = reader.readFloat32();
+    return data;
+  }
+
+  int getMessageSize() {
+    return 16;
+  }
+
+  @override
+  String get fullType {
+    // Returns string type for a message object
+    return 'std_msgs/ColorRGBA';
+  }
+
+  @override
+  String get md5sum {
+    //Returns md5sum for a message object
+    return 'a29a96539573343b1310c73607334b00';
+  }
+
+  @override
+  String get messageDefinition {
+    // Returns full string definition for message
+    return '''float32 r
+float32 g
+float32 b
+float32 a
+
+''';
+  }
+
+}
+
