@@ -14,12 +14,12 @@ class Duration extends RosMessage<Duration> {
 
   static Duration empty$ = Duration();
   Duration({ 
-    data,
+    RosTime data,
   }):
   this.data = data ?? RosTime(secs: 0, nsecs: 0);
 
   Duration call({ 
-    data,
+    RosTime data,
   }) => Duration(
   data: data,
   );

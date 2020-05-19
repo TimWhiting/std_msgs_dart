@@ -18,18 +18,18 @@ class Header extends RosMessage<Header> {
 
   static Header empty$ = Header();
   Header({ 
-    seq,
-    stamp,
-    frame_id,
+    int seq,
+    RosTime stamp,
+    String frame_id,
   }):
   this.seq = seq ?? 0,
   this.stamp = stamp ?? RosTime(secs: 0, nsecs: 0),
   this.frame_id = frame_id ?? '';
 
   Header call({ 
-    seq,
-    stamp,
-    frame_id,
+    int seq,
+    RosTime stamp,
+    String frame_id,
   }) => Header(
   seq: seq,
   stamp: stamp,

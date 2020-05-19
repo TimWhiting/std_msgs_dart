@@ -14,12 +14,12 @@ class Int32 extends RosMessage<Int32> {
 
   static Int32 empty$ = Int32();
   Int32({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   Int32 call({ 
-    data,
+    int data,
   }) => Int32(
   data: data,
   );

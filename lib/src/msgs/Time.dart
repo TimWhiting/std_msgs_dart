@@ -14,12 +14,12 @@ class Time extends RosMessage<Time> {
 
   static Time empty$ = Time();
   Time({ 
-    data,
+    RosTime data,
   }):
   this.data = data ?? RosTime(secs: 0, nsecs: 0);
 
   Time call({ 
-    data,
+    RosTime data,
   }) => Time(
   data: data,
   );

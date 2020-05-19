@@ -14,12 +14,12 @@ class Char extends RosMessage<Char> {
 
   static Char empty$ = Char();
   Char({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   Char call({ 
-    data,
+    int data,
   }) => Char(
   data: data,
   );

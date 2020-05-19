@@ -14,12 +14,12 @@ class Int16 extends RosMessage<Int16> {
 
   static Int16 empty$ = Int16();
   Int16({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   Int16 call({ 
-    data,
+    int data,
   }) => Int16(
   data: data,
   );

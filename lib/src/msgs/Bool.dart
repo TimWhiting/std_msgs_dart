@@ -14,12 +14,12 @@ class Bool extends RosMessage<Bool> {
 
   static Bool empty$ = Bool();
   Bool({ 
-    data,
+    bool data,
   }):
   this.data = data ?? false;
 
   Bool call({ 
-    data,
+    bool data,
   }) => Bool(
   data: data,
   );

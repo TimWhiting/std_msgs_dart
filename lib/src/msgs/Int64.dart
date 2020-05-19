@@ -14,12 +14,12 @@ class Int64 extends RosMessage<Int64> {
 
   static Int64 empty$ = Int64();
   Int64({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   Int64 call({ 
-    data,
+    int data,
   }) => Int64(
   data: data,
   );

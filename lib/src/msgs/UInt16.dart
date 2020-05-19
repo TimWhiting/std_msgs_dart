@@ -14,12 +14,12 @@ class UInt16 extends RosMessage<UInt16> {
 
   static UInt16 empty$ = UInt16();
   UInt16({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   UInt16 call({ 
-    data,
+    int data,
   }) => UInt16(
   data: data,
   );

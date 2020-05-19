@@ -17,15 +17,15 @@ class Int16MultiArray extends RosMessage<Int16MultiArray> {
 
   static Int16MultiArray empty$ = Int16MultiArray();
   Int16MultiArray({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   Int16MultiArray call({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => Int16MultiArray(
   layout: layout,
   data: data,

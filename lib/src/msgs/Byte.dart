@@ -14,12 +14,12 @@ class Byte extends RosMessage<Byte> {
 
   static Byte empty$ = Byte();
   Byte({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   Byte call({ 
-    data,
+    int data,
   }) => Byte(
   data: data,
   );

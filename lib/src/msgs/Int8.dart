@@ -14,12 +14,12 @@ class Int8 extends RosMessage<Int8> {
 
   static Int8 empty$ = Int8();
   Int8({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   Int8 call({ 
-    data,
+    int data,
   }) => Int8(
   data: data,
   );

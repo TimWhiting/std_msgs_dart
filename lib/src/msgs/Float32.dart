@@ -14,12 +14,12 @@ class Float32 extends RosMessage<Float32> {
 
   static Float32 empty$ = Float32();
   Float32({ 
-    data,
+    double data,
   }):
   this.data = data ?? 0.0;
 
   Float32 call({ 
-    data,
+    double data,
   }) => Float32(
   data: data,
   );

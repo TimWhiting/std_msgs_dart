@@ -14,12 +14,12 @@ class UInt8 extends RosMessage<UInt8> {
 
   static UInt8 empty$ = UInt8();
   UInt8({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   UInt8 call({ 
-    data,
+    int data,
   }) => UInt8(
   data: data,
   );

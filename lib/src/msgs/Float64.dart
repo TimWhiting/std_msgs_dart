@@ -14,12 +14,12 @@ class Float64 extends RosMessage<Float64> {
 
   static Float64 empty$ = Float64();
   Float64({ 
-    data,
+    double data,
   }):
   this.data = data ?? 0.0;
 
   Float64 call({ 
-    data,
+    double data,
   }) => Float64(
   data: data,
   );

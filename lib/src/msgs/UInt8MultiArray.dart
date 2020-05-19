@@ -17,15 +17,15 @@ class UInt8MultiArray extends RosMessage<UInt8MultiArray> {
 
   static UInt8MultiArray empty$ = UInt8MultiArray();
   UInt8MultiArray({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   UInt8MultiArray call({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => UInt8MultiArray(
   layout: layout,
   data: data,

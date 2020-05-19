@@ -14,12 +14,12 @@ class UInt32 extends RosMessage<UInt32> {
 
   static UInt32 empty$ = UInt32();
   UInt32({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   UInt32 call({ 
-    data,
+    int data,
   }) => UInt32(
   data: data,
   );

@@ -17,15 +17,15 @@ class UInt32MultiArray extends RosMessage<UInt32MultiArray> {
 
   static UInt32MultiArray empty$ = UInt32MultiArray();
   UInt32MultiArray({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   UInt32MultiArray call({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => UInt32MultiArray(
   layout: layout,
   data: data,

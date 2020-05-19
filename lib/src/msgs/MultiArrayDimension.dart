@@ -18,18 +18,18 @@ class MultiArrayDimension extends RosMessage<MultiArrayDimension> {
 
   static MultiArrayDimension empty$ = MultiArrayDimension();
   MultiArrayDimension({ 
-    label,
-    size,
-    stride,
+    String label,
+    int size,
+    int stride,
   }):
   this.label = label ?? '',
   this.size = size ?? 0,
   this.stride = stride ?? 0;
 
   MultiArrayDimension call({ 
-    label,
-    size,
-    stride,
+    String label,
+    int size,
+    int stride,
   }) => MultiArrayDimension(
   label: label,
   size: size,

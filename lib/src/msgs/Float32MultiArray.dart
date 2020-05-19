@@ -17,15 +17,15 @@ class Float32MultiArray extends RosMessage<Float32MultiArray> {
 
   static Float32MultiArray empty$ = Float32MultiArray();
   Float32MultiArray({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<double> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   Float32MultiArray call({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<double> data,
   }) => Float32MultiArray(
   layout: layout,
   data: data,

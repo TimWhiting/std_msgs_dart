@@ -17,15 +17,15 @@ class Int64MultiArray extends RosMessage<Int64MultiArray> {
 
   static Int64MultiArray empty$ = Int64MultiArray();
   Int64MultiArray({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   Int64MultiArray call({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => Int64MultiArray(
   layout: layout,
   data: data,

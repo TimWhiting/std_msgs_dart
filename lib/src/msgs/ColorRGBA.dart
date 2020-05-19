@@ -20,10 +20,10 @@ class ColorRGBA extends RosMessage<ColorRGBA> {
 
   static ColorRGBA empty$ = ColorRGBA();
   ColorRGBA({ 
-    r,
-    g,
-    b,
-    a,
+    double r,
+    double g,
+    double b,
+    double a,
   }):
   this.r = r ?? 0.0,
   this.g = g ?? 0.0,
@@ -31,10 +31,10 @@ class ColorRGBA extends RosMessage<ColorRGBA> {
   this.a = a ?? 0.0;
 
   ColorRGBA call({ 
-    r,
-    g,
-    b,
-    a,
+    double r,
+    double g,
+    double b,
+    double a,
   }) => ColorRGBA(
   r: r,
   g: g,

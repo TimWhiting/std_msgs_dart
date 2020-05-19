@@ -14,12 +14,12 @@ class StringMessage extends RosMessage<StringMessage> {
 
   static StringMessage empty$ = StringMessage();
   StringMessage({ 
-    data,
+    String data,
   }):
   this.data = data ?? '';
 
   StringMessage call({ 
-    data,
+    String data,
   }) => StringMessage(
   data: data,
   );

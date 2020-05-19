@@ -14,12 +14,12 @@ class UInt64 extends RosMessage<UInt64> {
 
   static UInt64 empty$ = UInt64();
   UInt64({ 
-    data,
+    int data,
   }):
   this.data = data ?? 0;
 
   UInt64 call({ 
-    data,
+    int data,
   }) => UInt64(
   data: data,
   );

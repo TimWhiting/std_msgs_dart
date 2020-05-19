@@ -17,15 +17,15 @@ class MultiArrayLayout extends RosMessage<MultiArrayLayout> {
 
   static MultiArrayLayout empty$ = MultiArrayLayout();
   MultiArrayLayout({ 
-    dim,
-    data_offset,
+    List<MultiArrayDimension> dim,
+    int data_offset,
   }):
   this.dim = dim ?? [],
   this.data_offset = data_offset ?? 0;
 
   MultiArrayLayout call({ 
-    dim,
-    data_offset,
+    List<MultiArrayDimension> dim,
+    int data_offset,
   }) => MultiArrayLayout(
   dim: dim,
   data_offset: data_offset,

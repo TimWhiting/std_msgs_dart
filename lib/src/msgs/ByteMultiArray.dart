@@ -17,15 +17,15 @@ class ByteMultiArray extends RosMessage<ByteMultiArray> {
 
   static ByteMultiArray empty$ = ByteMultiArray();
   ByteMultiArray({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   ByteMultiArray call({ 
-    layout,
-    data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => ByteMultiArray(
   layout: layout,
   data: data,
