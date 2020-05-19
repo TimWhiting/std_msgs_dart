@@ -1,5 +1,5 @@
-
 name: std_msgs
+description: A ros std_msgs package for dartros
 environment:
   sdk: ">=2.7.0 < 3.0.0"
 
