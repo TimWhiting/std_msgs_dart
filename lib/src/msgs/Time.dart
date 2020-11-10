@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Time extends RosMessage<Time> {
   RosTime data;
 
-  static Time empty$ = Time();
+  static Time $prototype = Time();
   Time({ 
     RosTime data,
   }):

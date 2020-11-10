@@ -1,6 +1,11 @@
+# Auto-generated. Do not edit!
+
+# Updated: Tue Nov 10 14:43:54 2020
+
+
 name: std_msgs
-description: A ROS std_msgs package for dartros
-version: 0.0.2
+description: A ros std_msgs message package for dartros
+version: 0.0.3
 repository: https://github.com/TimWhiting/std_msgs_dart
 
 environment:
@@ -8,4 +13,4 @@ environment:
 
 dependencies:
   buffer: ^1.0.6
-  dartros: ^0.0.1
+  dartros: ^0.0.3+4

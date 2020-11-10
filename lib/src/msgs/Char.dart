@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:55 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Char extends RosMessage<Char> {
   int data;
 
-  static Char empty$ = Char();
+  static Char $prototype = Char();
   Char({ 
     int data,
   }):

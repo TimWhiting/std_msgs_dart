@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -16,7 +18,7 @@ class MultiArrayDimension extends RosMessage<MultiArrayDimension> {
 
   int stride;
 
-  static MultiArrayDimension empty$ = MultiArrayDimension();
+  static MultiArrayDimension $prototype = MultiArrayDimension();
   MultiArrayDimension({ 
     String label,
     int size,

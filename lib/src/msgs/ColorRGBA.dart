@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -18,7 +20,7 @@ class ColorRGBA extends RosMessage<ColorRGBA> {
 
   double a;
 
-  static ColorRGBA empty$ = ColorRGBA();
+  static ColorRGBA $prototype = ColorRGBA();
   ColorRGBA({ 
     double r,
     double g,

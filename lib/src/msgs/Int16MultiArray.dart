@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -15,7 +17,7 @@ class Int16MultiArray extends RosMessage<Int16MultiArray> {
 
   List<int> data;
 
-  static Int16MultiArray empty$ = Int16MultiArray();
+  static Int16MultiArray $prototype = Int16MultiArray();
   Int16MultiArray({ 
     MultiArrayLayout layout,
     List<int> data,
@@ -44,7 +46,7 @@ class Int16MultiArray extends RosMessage<Int16MultiArray> {
     //deserializes a message object of type Int16MultiArray
     final data = Int16MultiArray();
     // Deserialize message field [layout]
-    data.layout = MultiArrayLayout.empty$.deserialize(reader);
+    data.layout = MultiArrayLayout.$prototype.deserialize(reader);
     // Deserialize message field [data]
     data.data = reader.readArray<int>(() => reader.readInt16(), arrayLen: null);
     return data;

@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:55 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -10,7 +12,7 @@ import 'package:dartros/msg_utils.dart';
 //-----------------------------------------------------------
 
 class Empty extends RosMessage<Empty> {
-  static Empty empty$ = Empty();
+  static Empty $prototype = Empty();
   Empty();
 
   Empty call() => Empty();

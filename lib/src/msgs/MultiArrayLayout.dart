@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -15,7 +17,7 @@ class MultiArrayLayout extends RosMessage<MultiArrayLayout> {
 
   int data_offset;
 
-  static MultiArrayLayout empty$ = MultiArrayLayout();
+  static MultiArrayLayout $prototype = MultiArrayLayout();
   MultiArrayLayout({ 
     List<MultiArrayDimension> dim,
     int data_offset,
@@ -48,9 +50,11 @@ class MultiArrayLayout extends RosMessage<MultiArrayLayout> {
     //deserializes a message object of type MultiArrayLayout
     final data = MultiArrayLayout();
     // Deserialize message field [dim]
-    // Deserialize array length for message field [dim]
-    var len = reader.readInt32();
-    data.dim = List.generate(len, (_) => MultiArrayDimension.empty$.deserialize(reader));
+    {
+      // Deserialize array length for message field [dim]
+      final len = reader.readInt32();
+      data.dim = List.generate(len, (_) => MultiArrayDimension.$prototype.deserialize(reader));
+    }
     // Deserialize message field [data_offset]
     data.data_offset = reader.readUint32();
     return data;

@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:55 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Byte extends RosMessage<Byte> {
   int data;
 
-  static Byte empty$ = Byte();
+  static Byte $prototype = Byte();
   Byte({ 
     int data,
   }):

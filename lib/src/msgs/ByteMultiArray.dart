@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -15,7 +17,7 @@ class ByteMultiArray extends RosMessage<ByteMultiArray> {
 
   List<int> data;
 
-  static ByteMultiArray empty$ = ByteMultiArray();
+  static ByteMultiArray $prototype = ByteMultiArray();
   ByteMultiArray({ 
     MultiArrayLayout layout,
     List<int> data,
@@ -44,7 +46,7 @@ class ByteMultiArray extends RosMessage<ByteMultiArray> {
     //deserializes a message object of type ByteMultiArray
     final data = ByteMultiArray();
     // Deserialize message field [layout]
-    data.layout = MultiArrayLayout.empty$.deserialize(reader);
+    data.layout = MultiArrayLayout.$prototype.deserialize(reader);
     // Deserialize message field [data]
     data.data = reader.readArray<int>(() => reader.readUint8(), arrayLen: null);
     return data;

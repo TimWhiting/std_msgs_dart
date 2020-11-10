@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -15,7 +17,7 @@ class Float32MultiArray extends RosMessage<Float32MultiArray> {
 
   List<double> data;
 
-  static Float32MultiArray empty$ = Float32MultiArray();
+  static Float32MultiArray $prototype = Float32MultiArray();
   Float32MultiArray({ 
     MultiArrayLayout layout,
     List<double> data,
@@ -44,7 +46,7 @@ class Float32MultiArray extends RosMessage<Float32MultiArray> {
     //deserializes a message object of type Float32MultiArray
     final data = Float32MultiArray();
     // Deserialize message field [layout]
-    data.layout = MultiArrayLayout.empty$.deserialize(reader);
+    data.layout = MultiArrayLayout.$prototype.deserialize(reader);
     // Deserialize message field [data]
     data.data = reader.readArray<double>(() => reader.readFloat32(), arrayLen: null);
     return data;

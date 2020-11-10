@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -15,7 +17,7 @@ class Int32MultiArray extends RosMessage<Int32MultiArray> {
 
   List<int> data;
 
-  static Int32MultiArray empty$ = Int32MultiArray();
+  static Int32MultiArray $prototype = Int32MultiArray();
   Int32MultiArray({ 
     MultiArrayLayout layout,
     List<int> data,
@@ -44,7 +46,7 @@ class Int32MultiArray extends RosMessage<Int32MultiArray> {
     //deserializes a message object of type Int32MultiArray
     final data = Int32MultiArray();
     // Deserialize message field [layout]
-    data.layout = MultiArrayLayout.empty$.deserialize(reader);
+    data.layout = MultiArrayLayout.$prototype.deserialize(reader);
     // Deserialize message field [data]
     data.data = reader.readArray<int>(() => reader.readInt32(), arrayLen: null);
     return data;

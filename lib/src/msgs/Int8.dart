@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Int8 extends RosMessage<Int8> {
   int data;
 
-  static Int8 empty$ = Int8();
+  static Int8 $prototype = Int8();
   Int8({ 
     int data,
   }):

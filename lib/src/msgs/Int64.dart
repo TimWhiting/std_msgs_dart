@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Int64 extends RosMessage<Int64> {
   int data;
 
-  static Int64 empty$ = Int64();
+  static Int64 $prototype = Int64();
   Int64({ 
     int data,
   }):

@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Float32 extends RosMessage<Float32> {
   double data;
 
-  static Float32 empty$ = Float32();
+  static Float32 $prototype = Float32();
   Float32({ 
     double data,
   }):

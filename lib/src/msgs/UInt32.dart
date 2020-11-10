@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class UInt32 extends RosMessage<UInt32> {
   int data;
 
-  static UInt32 empty$ = UInt32();
+  static UInt32 $prototype = UInt32();
   UInt32({ 
     int data,
   }):

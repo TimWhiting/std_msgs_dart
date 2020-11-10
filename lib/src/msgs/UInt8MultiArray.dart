@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 14:40:56 2020
+
 // (in-package std_msgs.msg)
 
 
@@ -15,7 +17,7 @@ class UInt8MultiArray extends RosMessage<UInt8MultiArray> {
 
   List<int> data;
 
-  static UInt8MultiArray empty$ = UInt8MultiArray();
+  static UInt8MultiArray $prototype = UInt8MultiArray();
   UInt8MultiArray({ 
     MultiArrayLayout layout,
     List<int> data,
@@ -44,7 +46,7 @@ class UInt8MultiArray extends RosMessage<UInt8MultiArray> {
     //deserializes a message object of type UInt8MultiArray
     final data = UInt8MultiArray();
     // Deserialize message field [layout]
-    data.layout = MultiArrayLayout.empty$.deserialize(reader);
+    data.layout = MultiArrayLayout.$prototype.deserialize(reader);
     // Deserialize message field [data]
     data.data = reader.readArray<int>(() => reader.readUint8(), arrayLen: null);
     return data;
