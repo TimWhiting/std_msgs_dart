@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:55 2020
+// Updated: Mon Feb  1 12:03:00 2021
 
 // (in-package std_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -16,12 +17,13 @@ class Byte extends RosMessage<Byte> {
 
   static Byte $prototype = Byte();
   Byte({ 
-    int data,
+    int? data,
   }):
   this.data = data ?? 0;
 
+  @override
   Byte call({ 
-    int data,
+    int? data,
   }) => Byte(
   data: data,
   );
